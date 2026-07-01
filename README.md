@@ -1,4 +1,4 @@
-?# Digital Products Store
+﻿# Digital Products Store
 
 A curated collection of high-quality digital products, hosted on GitHub Pages.
 
