@@ -1,0 +1,16 @@
+{
+  "product_id": "cecdd7bb",
+  "title": "Freelancer Project Dashboard",
+  "description": "A complete Notion template for freelancers to manage multiple projects, track invoices, monitor deadlines, and organize client communications. Includes: project database, invoice tracker, client CRM, weekly planner, and goal setting pages. Perfect for independent designers, developers, and consultants.",
+  "category": "notion_template",
+  "price": 9,
+  "features": [
+    "Project database with status tracking",
+    "Invoice tracker with payment status",
+    "Client CRM with contact info",
+    "Weekly planner view",
+    "Goal setting dashboard",
+    "Time tracking log"
+  ],
+  "generated_at": "2026-07-01T16:23:14.026586"
+}
