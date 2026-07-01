@@ -1,0 +1,16 @@
+{
+  "product_id": "51d1af12",
+  "title": "Content Creator OS",
+  "description": "All-in-one Notion workspace for content creators to plan, create, and publish across platforms. Includes content calendar, idea vault, production tracker, analytics dashboard, and platform-specific checklists. Works for YouTubers, bloggers, and social media managers.",
+  "category": "notion_template",
+  "price": 11,
+  "features": [
+    "Content calendar with platform scheduling",
+    "Idea vault with tagging system",
+    "Production pipeline tracker",
+    "Analytics dashboard",
+    "Platform-specific SEO checklists",
+    "Sponsorship management"
+  ],
+  "generated_at": "2026-07-01T17:51:09.294074"
+}
