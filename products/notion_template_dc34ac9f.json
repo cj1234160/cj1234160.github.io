@@ -1,0 +1,36 @@
+{
+  "title": "Startup Command Center",
+  "tagline": "The all-in-one Notion workspace to organize your business operations, track metrics, and scale efficiently.",
+  "description": "Transform chaos into clarity with this comprehensive business operating system designed specifically for entrepreneurs and early-stage startups. It consolidates project management, CRM, financial tracking, and team collaboration into a single, intuitive dashboard. By centralizing these critical workflows, you save hours on administrative tasks and gain real-time visibility into your company's health. This tool helps you prioritize high-impact activities, manage investor updates seamlessly, and maintain operational discipline during rapid growth phases. Digital download - no physical item will be shipped.",
+  "what_you_get": [
+    "All-in-One Dashboard Homepage",
+    "Client & Lead CRM Database",
+    "Project & Task Management Tracker",
+    "Financial Budget & Expense Log",
+    "Meeting Notes & Agenda Archive",
+    "Goal Setting & OKR Tracker",
+    "Team Onboarding Checklist"
+  ],
+  "features": [
+    "Automated status indicators for projects",
+    "Linked databases for seamless context switching",
+    "Pre-built filters for quick reporting",
+    "Mobile-friendly layout for on-the-go access",
+    "Customizable views for different team roles"
+  ],
+  "setup_time": "10 minutes",
+  "difficulty": "beginner",
+  "tech_requirements": "Free Notion account required. Works on desktop and mobile.",
+  "bonus_tips": [
+    "Duplicate the template into a new page to create separate workspaces for different ventures.",
+    "Use the 'Quick Add' button on the dashboard to log expenses or ideas instantly without navigating menus.",
+    "Connect your CRM to your task database to automatically generate follow-up tasks when a deal moves stages."
+  ],
+  "seo_keywords": "Notion startup template, business OS, entrepreneur productivity, CRM Notion, project management tracker, small business tools, startup checklist, Notion dashboard, business planning, operational efficiency",
+  "category": "notion_template",
+  "niche": "Business",
+  "audience": "entrepreneurs and startups",
+  "product_id": "dc34ac9f",
+  "price": 9,
+  "generated_at": "2026-07-03T09:12:28.078371"
+}
