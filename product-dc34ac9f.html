@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Startup Command Center | Digital Products Store</title>
+<meta name="description" content="Transform chaos into clarity with this comprehensive business operating system designed specifically for entrepreneurs and early-stage startups. It consolidates">
+<link rel="canonical" href="https://cj1234160.github.io/product-dc34ac9f.html">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f8f9fa;color:#1a1a2e;line-height:1.6}
+.header{background:#1a1a2e;color:#fff;padding:16px 20px}
+.header a{color:#fff;text-decoration:none;font-weight:600}
+.container{max-width:1000px;margin:0 auto;padding:40px 20px}
+.product-layout{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:40px}
+@media(max-width:768px){.product-layout{grid-template-columns:1fr}}
+.product-cover{width:100%;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,.1)}
+.product-badge{display:inline-block;background:#e8f4fd;color:#0f3460;font-size:.8rem;font-weight:600;padding:3px 10px;border-radius:12px;text-transform:uppercase;margin-bottom:12px}
+h1{font-size:1.8rem;font-weight:800;margin-bottom:12px}
+.price{font-size:2rem;font-weight:800;color:#0f3460;margin:16px 0}
+.desc{color:#495057;margin-bottom:20px;line-height:1.8}
+.features-title{font-size:1.1rem;font-weight:700;margin-bottom:12px}
+.features{list-style:none;margin-bottom:24px}
+.features li{padding:6px 0;display:flex;align-items:center;gap:8px}
+.features li::before{content:"\2713";color:#0f3460;font-weight:700}
+.btn-stripe{display:block;width:100%;padding:16px;background:#635bff;color:#fff;border:none;border-radius:8px;font-size:1.1rem;font-weight:700;cursor:pointer;text-align:center;transition:opacity .2s}
+.btn-stripe:hover{opacity:.9}
+.btn-stripe:disabled{opacity:.5;cursor:not-allowed}
+.secure-badge{text-align:center;color:#6c757d;font-size:.8rem;margin-top:12px;display:flex;align-items:center;justify-content:center;gap:6px}
+.footer{text-align:center;padding:40px;color:#adb5bd;font-size:.85rem;border-top:1px solid #e9ecef;margin-top:40px}
+#pay-msg{margin-top:16px;padding:12px;border-radius:6px;display:none}
+#pay-msg.info{background:#d1ecf1;color:#0c5460;display:block}
+#pay-msg.success{background:#d4edda;color:#155724;display:block}
+#pay-msg.error{background:#f8d7da;color:#721c24;display:block}
+</style>
+</head>
+<body>
+<div class="header"><a href="/">← Digital Products Store</a></div>
+<div class="container">
+<div class="product-layout">
+  <div><img class="product-cover" src="products/cover_dc34ac9f.png" alt="Startup Command Center" onerror="this.style.display='none'"></div>
+  <div>
+    <span class="product-badge">Notion Template</span>
+    <h1>Startup Command Center</h1>
+    <div class="price">$9</div>
+    <p class="desc">Transform chaos into clarity with this comprehensive business operating system designed specifically for entrepreneurs and early-stage startups. It consolidates project management, CRM, financial tracking, and team collaboration into a single, intuitive dashboard. By centralizing these critical workflows, you save hours on administrative tasks and gain real-time visibility into your company&#x27;s health. This tool helps you prioritize high-impact activities, manage investor updates seamlessly, and maintain operational discipline during rapid growth phases. Digital download - no physical item will be shipped.</p>
+    <h3 class="features-title">What You Get</h3>
+    <ul class="features"><li>Automated status indicators for projects</li><li>Linked databases for seamless context switching</li><li>Pre-built filters for quick reporting</li><li>Mobile-friendly layout for on-the-go access</li><li>Customizable views for different team roles</li></ul>
+    <button class="btn-stripe" id="buyBtn" data-pid="dc34ac9f" data-price="9">Buy Now - $9</button>
+    <div class="secure-badge">&#128274; Secure checkout via Stripe</div>
+    <div id="pay-msg"></div>
+  </div>
+</div>
+</div>
+<div class="footer"><p>All digital downloads &mdash; no physical items are shipped.</p></div>
+<script>
+document.getElementById("buyBtn").addEventListener("click", async function() {
+  const btn = this;
+  btn.disabled = true;
+  btn.textContent = "Redirecting to checkout...";
+  const msg = document.getElementById("pay-msg");
+  try {
+    const resp = await fetch("https://api.stripe.com/v1/checkout/sessions", {
+      method: "POST",
+      headers: {"Content-Type": "application/x-www-form-urlencoded"},
+      body: new URLSearchParams({
+        "success_url": window.location.origin + "/download.html?session_id={CHECKOUT_SESSION_ID}",
+        "cancel_url": window.location.href,
+        "payment_method_types[]": "card",
+        "line_items[0][price_data][currency]": "usd",
+        "line_items[0][price_data][product_data][name]": "Startup Command Center",
+        "line_items[0][price_data][unit_amount]": "900",
+        "line_items[0][quantity]": "1",
+        "mode": "payment"
+      })
+    });
+    const session = await resp.json();
+    if (session.url) {
+      window.location.href = session.url;
+    } else {
+      msg.className = "error";
+      msg.textContent = "Payment error: " + (session.error?.message || "Unknown error");
+    }
+  } catch(e) {
+    msg.className = "error";
+    msg.textContent = "Checkout temporarily unavailable. Please contact us.";
+  }
+  btn.disabled = false;
+  btn.textContent = "Buy Now - $9";
+});
+</script>
+</body>
+</html>
