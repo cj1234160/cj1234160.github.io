@@ -7,62 +7,66 @@
 <meta name="description" content="Transform chaos into clarity with this comprehensive business operating system designed specifically for entrepreneurs and early-stage startups. It consolidates">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#f8f9fa;color:#1a1a2e;line-height:1.6}
-.header{background:#1a1a2e;color:#fff;padding:16px 20px}
-.header a{color:#fff;text-decoration:none;font-weight:600}
-.container{max-width:1000px;margin:0 auto;padding:40px 20px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f6fa;color:#2d3436;line-height:1.6}
+.header{background:#2c3e50;color:#fff;padding:16px 24px;position:sticky;top:0;z-index:10}
+.header a{color:#fff;text-decoration:none;font-weight:600;font-size:.9rem}
+.container{max-width:1000px;margin:0 auto;padding:40px 24px}
 .product-layout{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:40px}
 @media(max-width:768px){.product-layout{grid-template-columns:1fr}}
-.product-cover{width:100%;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,.1)}
-.product-badge{display:inline-block;background:#e8f4fd;color:#0f3460;font-size:.8rem;font-weight:600;padding:3px 10px;border-radius:12px;text-transform:uppercase;margin-bottom:12px}
-h1{font-size:1.8rem;font-weight:800;margin-bottom:12px}
-.price{font-size:2rem;font-weight:800;color:#e74c3c;margin:16px 0}
-.desc{color:#495057;margin-bottom:20px;line-height:1.8}
-.pay-section{background:#fff;border-radius:8px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.08);text-align:center}
-.pay-section h3{margin-bottom:16px;font-size:1.1rem}
-.qr-row{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin:20px 0}
-.qr-item{text-align:center}
-.qr-item img{width:180px;height:180px;border-radius:8px;border:1px solid #e9ecef;object-fit:contain;background:#fff}
-.qr-item p{font-size:.85rem;color:#6c757d;margin-top:8px}
-.price-tag{font-size:1.5rem;font-weight:800;color:#e74c3c;margin:16px 0}
-.btn-dl{display:block;width:100%;max-width:400px;margin:20px auto;padding:14px;background:linear-gradient(135deg,#0f3460,#1a1a2e);color:#fff;border:none;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer;text-decoration:none;text-align:center}
-.btn-dl:hover{opacity:.9}
-.contact{text-align:center;color:#6c757d;font-size:.85rem;margin-top:16px}
-.footer{text-align:center;padding:40px;color:#adb5bd;font-size:.85rem;border-top:1px solid #e9ecef;margin-top:40px}
+.product-cover{width:100%;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.08)}
+.content h1{font-size:1.6rem;font-weight:800;margin-bottom:10px;line-height:1.3}
+.badge{display:inline-block;background:#dfe6e9;color:#636e72;font-size:.75rem;font-weight:600;padding:4px 12px;border-radius:20px;margin-bottom:12px}
+.price{font-size:1.8rem;font-weight:800;color:#e17055;margin:16px 0}
+.desc{color:#636e72;font-size:.9rem;margin-bottom:24px;line-height:1.8}
+.pay-box{background:#fff;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.pay-box h3{font-size:1rem;font-weight:700;color:#2d3436;margin-bottom:8px;text-align:center}
+.pay-box .pay-hint{font-size:.8rem;color:#b2bec3;text-align:center;margin-bottom:20px}
+.qr-row{display:flex;gap:20px;justify-content:center;align-items:center}
+.qr-item{text-align:center;flex:1;max-width:180px}
+.qr-item img{width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.06);background:#fff}
+.price-tag{text-align:center;font-size:1.4rem;font-weight:800;color:#e17055;margin:16px 0}
+.btn-dl{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;max-width:320px;margin:16px auto 0;padding:14px 24px;background:#2c3e50;color:#fff;border:none;border-radius:10px;font-size:.95rem;font-weight:600;cursor:pointer;text-decoration:none;transition:background .2s}
+.btn-dl:hover{background:#34495e}
+.contact{text-align:center;color:#b2bec3;font-size:.8rem;margin-top:16px}
+.contact strong{color:#636e72}
+.footer{text-align:center;padding:32px 24px;color:#b2bec3;font-size:.8rem;border-top:1px solid #dfe6e9;margin-top:40px}
 </style>
 </head>
 <body>
-<div class="header"><a href="/">← Digital Products Store</a></div>
+<div class="header"><a href="/">← 返回商店</a></div>
 <div class="container">
 <div class="product-layout">
   <div><img class="product-cover" src="products/cover_dc34ac9f.png alt="Startup Command Center" onerror="this.style.display='none'"></div>
-  <div>
-    <span class="product-badge">Notion Template</span>
+  <div class="content">
+    <span class="badge">Notion Template</span>
     <h1>Startup Command Center</h1>
     <div class="price">$9</div>
     <p class="desc">Transform chaos into clarity with this comprehensive business operating system designed specifically for entrepreneurs and early-stage startups. It consolidates project management, CRM, financial tracking, and team collaboration into a single, intuitive dashboard. By centralizing these critical workflows, you save hours on administrative tasks and gain real-time visibility into your company&#x27;s health. This tool helps you prioritize high-impact activities, manage investor updates seamlessly, and maintain operational discipline during rapid growth phases. Digital download - no physical item will be shipped.</p>
-    <div class="pay-section">
-      <h3>🔒 扫码付款，立即下载</h3>
-      <div class="price-tag">$9</div>
+    <div class="pay-box">
+      <h3>扫码支付 · 立即下载</h3>
+      <p class="pay-hint">长按或扫描下方二维码支付 $9</p>
       <div class="qr-row">
         <div class="qr-item">
-          <img src="products/wechat_qr.jpg" alt="微信支付">
-          <p>微信支付</p>
+          <img src="products/wechat_qr.png" alt="微信支付">
         </div>
         <div class="qr-item">
-          <img src="products/alipay_qr.jpg" alt="支付宝">
-          <p>支付宝</p>
+          <img src="products/alipay_qr.png" alt="支付宝">
         </div>
       </div>
-      <a class="btn-dl" href="products/notion_template_dc34ac9f.zip download>✅ 付款后点击下载</a>
+      <div class="price-tag">$9</div>
+      <a class="btn-dl" href="products/notion_template_dc34ac9f.zip" download>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        付款后点击下载
+      </a>
       <div class="contact">
-        <p>扫码付款后点击上方按钮直接下载</p>
-        <p>有问题联系微信：<strong>1553558438</strong></p>
+        付款遇到问题？联系微信 <strong>1553558438</strong>
       </div>
     </div>
   </div>
 </div>
 </div>
-<div class="footer"><p>All digital downloads &mdash; no physical items are shipped.</p></div>
+<div class="footer">
+  <p>支持微信支付 · 支付宝 · 付款后立即下载</p>
+</div>
 </body>
 </html>
