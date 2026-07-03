@@ -3,16 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Digital Products Store | Premium Digital Downloads</title>
-<meta name="description" content="Browse our collection of premium digital products. Instant download after purchase. Notion templates, PDF guides, and more.">
-<meta name="keywords" content="digital products, notion templates, pdf guides, digital downloads">
+<title>Digital Products Store</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f8f9fa;color:#1a1a2e;line-height:1.6}
 .hero{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:#fff;padding:60px 20px;text-align:center}
 .hero h1{font-size:2.5rem;font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
 .hero p{font-size:1.1rem;opacity:.85;max-width:600px;margin:0 auto}
-.hero .cta{display:inline-block;margin-top:20px;padding:12px 32px;background:#fff;color:#0f3460;border-radius:6px;text-decoration:none;font-weight:600;font-size:.95rem}
 .container{max-width:1100px;margin:0 auto;padding:40px 20px}
 .section-title{font-size:1.5rem;font-weight:700;margin-bottom:24px;color:#1a1a2e}
 .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
@@ -20,105 +17,125 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica N
 .product-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.12)}
 .product-cover{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;background:#e9ecef}
 .product-info{padding:20px;flex:1;display:flex;flex-direction:column}
-.product-badge{display:inline-block;background:#e8f4fd;color:#0f3460;font-size:.8rem;font-weight:600;padding:3px 10px;border-radius:12px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:10px;width:fit-content}
-.product-title{font-size:1.2rem;font-weight:700;margin-bottom:8px}
-.product-desc{font-size:.85rem;color:#6c757d;margin-bottom:12px;line-height:1.6;flex:1}
+.product-badge{display:inline-block;background:#e8f4fd;color:#0f3460;font-size:.8rem;font-weight:600;padding:3px 10px;border-radius:12px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:10px}
+.product-title{font-size:1.2rem;font-weight:700;margin-bottom:8px;color:#1a1a2e}
+.product-desc{font-size:.9rem;color:#6c757d;margin-bottom:12px;line-height:1.6;flex:1}
 .product-features{list-style:none;margin-bottom:16px}
-.product-features li{font-size:.8rem;color:#495057;padding:3px 0;display:flex;align-items:center;gap:6px}
+.product-features li{font-size:.85rem;color:#495057;padding:4px 0;display:flex;align-items:center;gap:6px}
 .product-features li::before{content:"\2713";color:#0f3460;font-weight:700}
 .product-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:12px;border-top:1px solid #f0f0f0}
-.product-price{font-size:1.3rem;font-weight:800;color:#0f3460}
-.btn-buy{padding:10px 20px;background:linear-gradient(135deg,#0f3460,#1a1a2e);color:#fff;border:none;border-radius:6px;font-size:.85rem;font-weight:600;cursor:pointer;text-decoration:none;transition:opacity .2s}
+.product-price{font-size:1.4rem;font-weight:800;color:#0f3460}
+.btn-buy{display:inline-flex;align-items:center;gap:6px;padding:10px 24px;background:linear-gradient(135deg,#0f3460,#1a1a2e);color:#fff;border:none;border-radius:6px;font-size:.9rem;font-weight:600;cursor:pointer;text-decoration:none;transition:opacity .2s}
 .btn-buy:hover{opacity:.9}
 .footer{text-align:center;padding:40px 20px;color:#adb5bd;font-size:.85rem;border-top:1px solid #e9ecef;margin-top:20px}
-@media(max-width:640px){.hero h1{font-size:1.8rem}.products-grid{grid-template-columns:1fr}}
+.footer a{color:#0f3460;text-decoration:none}
+@media(max-width:640px){.hero h1{font-size:1.8rem}.products-grid{grid-template-columns:1fr}.product-footer{flex-direction:column;gap:12px;align-items:stretch}.btn-buy{justify-content:center}}
 </style>
 </head>
 <body>
 <div class="hero">
   <h1>Digital Products Store</h1>
   <p>Premium digital products for productivity, creativity, and professional growth. Instant download after purchase.</p>
-  <a class="cta" href="#products">Browse Products</a>
 </div>
-<div class="container" id="products">
-  <h2 class="section-title">Featured Products (6 available)</h2>
-  <div class="products-grid"><div class="product-card">
-  <a href="/product-dc34ac9f.html"><img class="product-cover" src="products/cover_dc34ac9f.png" alt="Startup Command Center" loading="lazy" onerror="this.style.display='none'"></a>
+<div class="container">
+  <h2 class="section-title">Featured Products</h2>
+  <div class="products-grid">
+<div class="product-card">
+  <img class="product-cover" src="products/cover_dc34ac9f.png" alt="Startup Command Center" loading="lazy" onerror="this.style.display='none'">
   <div class="product-info">
     <span class="product-badge">Notion Template</span>
-    <a href="/product-dc34ac9f.html" style="text-decoration:none;color:inherit"><h3 class="product-title">Startup Command Center</h3></a>
-    <p class="product-desc">Transform chaos into clarity with this comprehensive business operating system designed specifically for entrepreneurs and early-stage startups. It co...</p>
+    <h3 class="product-title">Startup Command Center</h3>
+    <p class="product-desc">Transform chaos into clarity with this comprehensive business operating system designed specifically for entrepreneurs and early-stage startups. It consolidates project management, CRM, financial tracking, and team collaboration into a single, intuitive dashboard. By centralizing these critical workflows, you save hours on administrative tasks and gain real-time visibility into your company&#x27;s health. This tool helps you prioritize high-impact activities, manage investor updates seamlessly, and maintain operational discipline during rapid growth phases. Digital download - no physical item will be shipped.</p>
     <ul class="product-features"><li>Automated status indicators for projects</li><li>Linked databases for seamless context switching</li><li>Pre-built filters for quick reporting</li><li>Mobile-friendly layout for on-the-go access</li><li>Customizable views for different team roles</li></ul>
     <div class="product-footer">
       <span class="product-price">$9</span>
-      <a class="btn-buy" href="/product-dc34ac9f.html">View →</a>
+      <a class="btn-buy" href="products/notion_template_dc34ac9f.zip" download>Download</a>
     </div>
   </div>
-</div><div class="product-card">
-  <a href="/product-19850ee8.html"><img class="product-cover" src="products/cover_19850ee8.png" alt="Money Mindset Makeover for Gen Z" loading="lazy" onerror="this.style.display='none'"></a>
+</div>
+<div class="product-card">
+  <img class="product-cover" src="products/cover_19850ee8.png" alt="Money Mindset Makeover for Gen Z" loading="lazy" onerror="this.style.display='none'">
   <div class="product-info">
     <span class="product-badge">Pdf Guide</span>
-    <a href="/product-19850ee8.html" style="text-decoration:none;color:inherit"><h3 class="product-title">Money Mindset Makeover for Gen Z</h3></a>
-    <p class="product-desc">Young adults often feel overwhelmed by bills, student loans, and the pressure to spend. This guide simplifies complex financial concepts into actionab...</p>
+    <h3 class="product-title">Money Mindset Makeover for Gen Z</h3>
+    <p class="product-desc">Young adults often feel overwhelmed by bills, student loans, and the pressure to spend. This guide simplifies complex financial concepts into actionable steps tailored for early career stages. Readers will transform from anxious spenders to confident money managers. You will learn practical strategies for debt elimination and wealth building. Start your journey toward financial freedom today. Digital download - no physical item will be shipped.</p>
     <ul class="product-features"><li>Instant digital download</li><li>Compatible with all devices</li><li>Lifetime access</li></ul>
     <div class="product-footer">
       <span class="product-price">$9</span>
-      <a class="btn-buy" href="/product-19850ee8.html">View →</a>
+      <a class="btn-buy" href="products/pdf_guide_19850ee8.zip" download>Download</a>
     </div>
   </div>
-</div><div class="product-card">
-  <a href="/product-a32b18bf.html"><img class="product-cover" src="products/cover_a32b18bf.png" alt="Resume Writing Masterclass 2025" loading="lazy" onerror="this.style.display='none'"></a>
+</div>
+<div class="product-card">
+  <img class="product-cover" src="products/cover_a32b18bf.png" alt="Resume Writing Masterclass 2025" loading="lazy" onerror="this.style.display='none'">
   <div class="product-info">
     <span class="product-badge">Pdf Guide</span>
-    <a href="/product-a32b18bf.html" style="text-decoration:none;color:inherit"><h3 class="product-title">Resume Writing Masterclass 2025</h3></a>
-    <p class="product-desc">Professional resume writing guide with 5 ATS-friendly templates. Covers keyword optimization, achievement highlighting, formatting for different indus...</p>
+    <h3 class="product-title">Resume Writing Masterclass 2025</h3>
+    <p class="product-desc">Professional resume writing guide with 5 ATS-friendly templates. Covers keyword optimization, achievement highlighting, formatting for different industries, and cover letter writing. Bonus: LinkedIn profile optimization checklist included.</p>
     <ul class="product-features"><li>5 ATS-friendly templates</li><li>Keyword optimization guide</li><li>Industry-specific tips</li><li>Cover letter template</li><li>LinkedIn optimization checklist</li><li>Real before/after examples</li></ul>
     <div class="product-footer">
       <span class="product-price">$8</span>
-      <a class="btn-buy" href="/product-a32b18bf.html">View →</a>
+      <a class="btn-buy" href="products/pdf_guide_a32b18bf.zip" download>Download</a>
     </div>
   </div>
-</div><div class="product-card">
-  <a href="/product-a67e8303.html"><img class="product-cover" src="products/cover_a67e8303.png" alt="The Ultimate Side Hustle Starter Kit" loading="lazy" onerror="this.style.display='none'"></a>
+</div>
+<div class="product-card">
+  <img class="product-cover" src="products/cover_a67e8303.png" alt="The Ultimate Side Hustle Starter Kit" loading="lazy" onerror="this.style.display='none'">
   <div class="product-info">
     <span class="product-badge">Pdf Guide</span>
-    <a href="/product-a67e8303.html" style="text-decoration:none;color:inherit"><h3 class="product-title">The Ultimate Side Hustle Starter Kit</h3></a>
-    <p class="product-desc">A comprehensive 15-page PDF guide covering everything you need to start a profitable side hustle: niche selection, tool setup, pricing strategy, clien...</p>
+    <h3 class="product-title">The Ultimate Side Hustle Starter Kit</h3>
+    <p class="product-desc">A comprehensive 15-page PDF guide covering everything you need to start a profitable side hustle: niche selection, tool setup, pricing strategy, client acquisition, and scaling. Includes 3 ready-to-use templates: client proposal, pricing calculator, and weekly action plan.</p>
     <ul class="product-features"><li>15-page actionable guide</li><li>Client proposal template</li><li>Pricing calculator spreadsheet</li><li>30-day action plan</li><li>Tool recommendations with links</li><li>Real case studies</li></ul>
     <div class="product-footer">
       <span class="product-price">$7</span>
-      <a class="btn-buy" href="/product-a67e8303.html">View →</a>
+      <a class="btn-buy" href="products/pdf_guide_a67e8303.zip" download>Download</a>
     </div>
   </div>
-</div><div class="product-card">
-  <a href="/product-51d1af12.html"><img class="product-cover" src="products/cover_51d1af12.png" alt="Content Creator OS" loading="lazy" onerror="this.style.display='none'"></a>
+</div>
+<div class="product-card">
+  <img class="product-cover" src="products/cover_51d1af12.png" alt="Content Creator OS" loading="lazy" onerror="this.style.display='none'">
   <div class="product-info">
     <span class="product-badge">Notion Template</span>
-    <a href="/product-51d1af12.html" style="text-decoration:none;color:inherit"><h3 class="product-title">Content Creator OS</h3></a>
-    <p class="product-desc">All-in-one Notion workspace for content creators to plan, create, and publish across platforms. Includes content calendar, idea vault, production trac...</p>
+    <h3 class="product-title">Content Creator OS</h3>
+    <p class="product-desc">All-in-one Notion workspace for content creators to plan, create, and publish across platforms. Includes content calendar, idea vault, production tracker, analytics dashboard, and platform-specific checklists. Works for YouTubers, bloggers, and social media managers.</p>
     <ul class="product-features"><li>Content calendar with platform scheduling</li><li>Idea vault with tagging system</li><li>Production pipeline tracker</li><li>Analytics dashboard</li><li>Platform-specific SEO checklists</li><li>Sponsorship management</li></ul>
     <div class="product-footer">
       <span class="product-price">$11</span>
-      <a class="btn-buy" href="/product-51d1af12.html">View →</a>
+      <a class="btn-buy" href="products/notion_template_51d1af12.zip" download>Download</a>
     </div>
   </div>
-</div><div class="product-card">
-  <a href="/product-cecdd7bb.html"><img class="product-cover" src="products/cover_cecdd7bb.png" alt="Freelancer Project Dashboard" loading="lazy" onerror="this.style.display='none'"></a>
+</div>
+<div class="product-card">
+  <img class="product-cover" src="products/cover_cecdd7bb.png" alt="Freelancer Project Dashboard" loading="lazy" onerror="this.style.display='none'">
   <div class="product-info">
     <span class="product-badge">Notion Template</span>
-    <a href="/product-cecdd7bb.html" style="text-decoration:none;color:inherit"><h3 class="product-title">Freelancer Project Dashboard</h3></a>
-    <p class="product-desc">A complete Notion template for freelancers to manage multiple projects, track invoices, monitor deadlines, and organize client communications. Include...</p>
+    <h3 class="product-title">Freelancer Project Dashboard</h3>
+    <p class="product-desc">A complete Notion template for freelancers to manage multiple projects, track invoices, monitor deadlines, and organize client communications. Includes: project database, invoice tracker, client CRM, weekly planner, and goal setting pages. Perfect for independent designers, developers, and consultants.</p>
     <ul class="product-features"><li>Project database with status tracking</li><li>Invoice tracker with payment status</li><li>Client CRM with contact info</li><li>Weekly planner view</li><li>Goal setting dashboard</li><li>Time tracking log</li></ul>
     <div class="product-footer">
       <span class="product-price">$9</span>
-      <a class="btn-buy" href="/product-cecdd7bb.html">View →</a>
+      <a class="btn-buy" href="products/notion_template_cecdd7bb.zip" download>Download</a>
     </div>
   </div>
-</div></div>
+</div>
+<div class="product-card">
+  <img class="product-cover" src="products/cover_6e7d0381.png" alt="Sample Product" loading="lazy" onerror="this.style.display='none'">
+  <div class="product-info">
+    <span class="product-badge">Notion Template</span>
+    <h3 class="product-title">Sample Product</h3>
+    <p class="product-desc">A great digital product template. Digital download - no physical item will be shipped.</p>
+    <ul class="product-features"></ul>
+    <div class="product-footer">
+      <span class="product-price">$9</span>
+      <a class="btn-buy" href="products/notion_template_6e7d0381.zip" download>Download</a>
+    </div>
+  </div>
+</div>
+  </div>
 </div>
 <div class="footer">
+  <p>Contact for purchase: <a href="mailto:contact@example.com">contact@example.com</a></p>
   <p>All digital downloads &mdash; no physical items are shipped.</p>
-  <p style="margin-top:8px">Contact: <a href="mailto:support@example.com" style="color:#0f3460">support@example.com</a></p>
 </div>
 </body>
 </html>
